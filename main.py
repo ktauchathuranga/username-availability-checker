@@ -5,7 +5,7 @@ with open('word.txt', 'r') as file:   # give your word list text file name
         word = line[1].strip()
         # print(word)
 
-        url = 'https://www.reddit.com/r/'
+        url = 'https://github.com/'
 
         newUrl = url + word
         # print(newUrl)
@@ -24,7 +24,8 @@ with open('word.txt', 'r') as file:   # give your word list text file name
                 else:
                     print(f"{line[0]} Community found")
             else:
-                print(f"Request failed with status code: {response.status_code}")
+                # print(f"Request failed with status code: {response.status_code}")
+                print(word)
 
         except Exception as e:
             print(f"An error occurred: {e}")
